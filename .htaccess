@@ -1,0 +1,15 @@
+# Protect version control files and directories
+# Matches any file or directory whose name begins with .git
+RedirectMatch 404 /\.git
+
+# Protect htaccess
+<Files .htaccess>
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# Disable the server signature
+ServerSignature Off
+
+# Disable directory browsing
+Options All -Indexes
