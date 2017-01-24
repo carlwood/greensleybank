@@ -18,7 +18,9 @@ body {
 .container{width:960px; margin:0 auto;}
 
 img
-{  border-style: none;
+{  
+    border-style: none;
+    max-width: 100%;
 }
 
 .footercontainer {
@@ -33,9 +35,9 @@ img
 }
 
 #header {
-
     height:120px;
-    margin:0 auto;}
+    margin:0 auto;
+}
 
 #header img {
     margin-top:20px;
@@ -59,7 +61,7 @@ img
 }
 
 #footer a:hover {
-    text-decoration:none;
+    color: #225020;
 }
 
 #nav {
@@ -89,8 +91,6 @@ img
 }
 
 #top img {
-    margin-bottom:15px;
-    margin-top:15px;
 
 }
 
