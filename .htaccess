@@ -11,13 +11,10 @@ RedirectMatch 404 /\.git
 # Disable the server signature
 ServerSignature Off
 
-# Disable directory browsing
-Options All -Indexes
+RewriteEngine on
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
 
-
-ErrorDocument 404 /404.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
