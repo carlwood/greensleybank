@@ -20,3 +20,4 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 ErrorDocument 404 /404.html
+Header add "disablevcache" "true"
