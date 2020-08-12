@@ -13,9 +13,10 @@ body {
 #wrapper {
     width:960px;
     margin:0 auto;
+    max-width: 100%;
 }
 
-.container{width:960px; margin:0 auto;}
+.container{width:960px; margin:0 auto;max-width: 100%;}
 
 img
 {  
@@ -264,4 +265,8 @@ a.producelink {
 
 .blog-post img {
     margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
 }
